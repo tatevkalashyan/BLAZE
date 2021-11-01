@@ -1,0 +1,73 @@
+.dashboard {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 0;
+  .card-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #010C39;
+    text-align: center;
+  }
+  .dashboard-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #777777;
+  }
+  .border {
+    border: 1px solid !important;
+    border-color: initial!important;
+  }
+  .info-card {
+    box-shadow: none;
+    ul {
+      li {
+        line-height: 28px;
+        font-weight: 400;
+        color: #777777;
+      }
+    }
+  }
+  .go-back-btn {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    text-transform: uppercase;
+    position: absolute;
+    left: 30px;
+  }
+}
+.form-container {
+  max-width: 882px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+  label {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #010C39;
+  }
+  .form-control {
+    border-radius: 25px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    height: 46px;
+    margin-bottom: 8px;
+  }
+  textarea {
+    @extend .form-control;
+    border-radius: 4px!important;
+    height: auto!important;
+  }
+  .sub-titles {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+  }
+}

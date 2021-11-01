@@ -1,0 +1,196 @@
+.category_left-menu {
+  width: 290px;
+  background-color: #F6F7FB;
+  .title {
+    font: normal normal 600 25px/36px Muli;
+    color: #2A2A2A;
+    padding-left: 15px;
+  }
+  nav {
+    position: relative;
+    width: 100%;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      .sub-menu {
+        min-height: 50px;
+        border-bottom: 1px solid #D1D6E9;
+        ul {
+          li {
+            min-height: 50px;
+            overflow: hidden;
+            a {
+              padding: 0 0 0 20px;
+              margin-left: 20px;
+              border-bottom: 1px solid #D1D6E9;
+              &:hover {
+              }
+            }
+          }
+        }
+        a {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding-left: 40px;
+          min-height: 50px;
+          font: normal normal 400 18px/26px Muli;
+          letter-spacing: 0;
+          color: #2A2A2A;
+          width: 100%;
+          border-bottom: 1px solid #D1D6E9;
+          text-decoration: none;
+          -webkit-transition: 0.2s linear;
+          -moz-transition: 0.2s linear;
+          -ms-transition: 0.2s linear;
+          -o-transition: 0.2s linear;
+          transition: 0.2s linear;
+
+          .fa {
+            width: 16px;
+            text-align: center;
+            margin-right: 5px;
+            position: absolute;
+            left: 14px;
+            color: #FF8400;
+          }
+
+          &:hover {
+            background: #f8f8f8;
+            color: #515151;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.3s;
+  margin-top: 70px;
+  .bg-blue {
+    height: 58px;
+    background: #004C8A 0 0 no-repeat padding-box;
+    position: relative;
+  }
+  .title {
+    font: normal normal 600 18px/26px Muli;
+    color: #FFFFFF;
+  }
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    &:hover {
+      color: #f1f1f1;
+    }
+  }
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #ffffff;
+  }
+  .border-bottom {
+    border-bottom: 1px solid #D1D6E9;
+  }
+  .info-text {
+    font: normal normal 600 18px/26px Muli;
+    color: #2A2A2A;
+  }
+  &.show {
+    width: 486px;
+  }
+  .today-card {
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    width: 100%;
+
+    .qtySelector {
+      width: 80px;
+      height: 25px;
+    }
+
+    .today_sale {
+      width: 90px;
+      height: 30px;
+      background: #FF8400 0 0 no-repeat padding-box;
+      border-radius: 17px;
+      color: #FFFFFF;
+      font: normal normal 700 14px/14px Muli;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &_product-title {
+      font: normal normal 400 14px/20px Muli;
+      color: #2A2A2A;
+    }
+    .product_weight {
+      font: normal normal 400 14px/20px Muli;
+      color: #A2A2A2;
+    }
+    &_price {
+      text-decoration: line-through;
+      font: normal normal 600 16px/24px Muli;
+      color: #BCBCBC;
+    }
+    &_new-price {
+      font: normal normal 600 16px/24px Muli;
+      color: #2A2A2A;
+    }
+    &_total-price {
+      font: normal normal 600 16px/24px Muli;
+      color: #FF8400;
+    }
+    &_add-card {
+      width: 68px;
+      height: 40px;
+      background: transparent linear-gradient(180deg, #FFC400 0%, #FF8400 100%) 0% 0% no-repeat padding-box;
+      border-radius: 19px;
+    }
+    @media (max-width: 1470px) {
+      margin: 0 6px 10px;
+    }
+  }
+}
+.phone,
+.shop-name {
+  font: normal normal 600 16px/24px Muli;
+  color: #004C8A;
+}
+.opacity-bg {
+  position: relative;
+  &::after {
+    content: '';
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+

@@ -1,0 +1,198 @@
+.logReg {
+  .modal-content {
+    border-radius: 10px;
+  }
+  .modal-title {
+    font: normal normal 700 25px/36px Muli;
+    color: #004C8A;
+    span {
+      color: #FF8400;
+    }
+  }
+  .or {
+    font: normal normal bold 18px/26px Muli;
+    color: #004C8A;
+  }
+  .oval_link {
+    background: #FBFBFB 0 0 no-repeat padding-box;
+    box-shadow: 0 0 5px #0000001A;
+    border-radius: 29px;
+    width: 334px;
+    height: 42px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      color: #565656;
+    }
+    &.active {
+      background: #4C69BA 0 0 no-repeat padding-box;
+      a {
+        color: #FFFFFF;
+      }
+    }
+  }
+  form {
+    max-width: 370px;
+    margin: 0 auto;
+    .form-control {
+      background: #FFFFFF 0 0 no-repeat padding-box;
+      border: 1px solid #DBDBDB;
+      border-radius: 10px;
+      &::placeholder {
+        font: normal normal medium 16px/21px "Roboto";
+        color: $placeholder-color;
+      }
+    }
+    a {
+      font: normal normal normal 14px/17px "Roboto";
+      color: $base-dark;
+    }
+    p.text-center {
+      font: normal normal normal 16px/24px Muli;
+      color: #004C8A;
+      margin-bottom: 0;
+    }
+  }
+  .form-check-label {
+    font: normal normal 400 14px/20px Muli;
+    color: #004C8A;
+  }
+  .btn-link {
+    font: normal normal normal 14px/20px Muli;
+    color: #A8A8A8;
+    text-decoration: none;
+  }
+}
+.verification-modal {
+  .modal-body_title {
+    font: normal normal 600 16px/23px Muli;
+    color: #004C8A;
+    text-align: center;
+  }
+}
+
+.location-modal {
+  .modal-dialog-left {
+    margin-left: 10%!important;
+    margin-top: 70px!important;
+    position: relative;
+    &::before {
+      content: '';
+      border-top: 10px transparent;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 17px solid #ffffff;
+      position: absolute;
+      top: -14px;
+      left: 43%;
+    }
+    .modal-content {
+      border: 0!important;
+      h5 {
+        font: normal normal 600 12px/30px Muli;
+        color: #2A2A2A;
+      }
+      .location-name {
+        font: normal normal 600 20px/30px Muli;
+        color: #004C8A;
+      }
+    }
+    .close {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 16px;
+    }
+  }
+  .change_location-btn {
+    cursor: pointer;
+  }
+
+  .change_location {
+    .title {
+      font: normal normal 600 16px/30px Muli;
+      color: #004C8A;
+      margin-bottom: 8px;
+    }
+    .or {
+      font: normal normal 600 16px/30px Muli;
+      color: #004C8A;
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+.product_details {
+  .product_title {
+    font: normal normal 600 16px/24px Muli;
+    color: #004C8A;
+    border-bottom: 1px solid #D1D6E9;
+    padding-bottom: 8px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+  .product_info-title {
+    font: normal normal 500 12px/20px Montserrat;
+    color: #004C8A;
+  }
+  .product_info {
+    font: normal normal 400 12px/20px Montserrat;
+    color: #004C8A;
+  }
+  .yellow-text-btn {
+    font: normal normal bold 14px/20px Muli;
+    color: #FF8400;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .owl-carousel2 {
+    .owl-nav {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 45px;
+      color: #004C8A;
+    }
+  }
+  .today-card {
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 0 6px #00000029;
+    border-radius: 10px;
+    width: 250px;
+    height: 370px;
+    margin: 0 6px 20px;
+  }
+  .today_sale {
+    width: 90px;
+    height: 30px;
+    background: #FF8400 0 0 no-repeat padding-box;
+    border-radius: 17px;
+    color: #FFFFFF;
+    font: normal normal 700 14px/14px Muli;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .today-card_product-title {
+    font: normal normal 600 18px/26px Muli;
+    color: #000000;
+  }
+  .product_price {
+    font: normal normal 400 16px/24px Muli;
+    color: #4F99D5;
+  }
+  .owl-carousel3 .owl-item img {
+    display: block;
+    width: inherit;
+    margin: 0 auto;
+    zoom: 0.8;
+  }
+}

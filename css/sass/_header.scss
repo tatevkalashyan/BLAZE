@@ -1,0 +1,62 @@
+header {
+    background-color: #fff;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    min-height: 70px;
+    max-width: 1630px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+    .nav-item {
+        margin-left: 32px;
+        .nav-link {
+            font: normal normal 700 16px/24px "Muli";
+            color: #004C8A;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+    }
+    .location {
+        .nav-link {
+            font: normal normal 400 16px/24px "Muli";
+            color: #000000;
+            .fa-angle-down {
+                color: inherit;
+                font-size: 12px;
+            }
+        }
+    }
+    .navbar-toggler {
+        @media (max-width: 992px) {
+            position: absolute;
+            right: 0;
+            top: 20px;
+        }
+    }
+    .navbar-bottom {
+        background-color: #004C8A;
+        ul {
+            li {
+                border-right: 1px solid #8289A4;
+                &:last-child {
+                    border-right: 0;
+                }
+                a {
+                    padding: 0 30px;
+                    font: normal normal 600 18px/26px Muli;
+                    color: #FFFFFF;
+                }
+                &.active,
+                &:hover {
+                    a {
+                        color: #FF8400;
+                    }
+                }
+
+            }
+        }
+    }
+}
